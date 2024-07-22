@@ -1,0 +1,33 @@
+### Get all course: /api/v1/courses
+GET http://localhost:3000/api/v1/courses
+
+### Get by id: /api/v1/courses/:id
+GET http://localhost:3000/api/v1/courses/669db62380b923b9103dedd4
+
+##### Create course: /api/v1/courses
+POST http://localhost:3000/api/v1/courses
+Content-Type: application/json
+
+{
+  "name": "Programming with C# 1",
+  "description": "C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.\r\n\r\nC# is used to develop web apps, desktop apps, mobile apps, games and much more.",
+  "image": "/uploads/images/1721611309579.jpg",
+  "level": "Senior"
+}
+
+
+##### Update course: /api/v1/courses/:id
+PUT http://localhost:3000/api/v1/courses/669db62380b923b9103dedd4
+Content-Type: application/json
+
+{
+    "name": "Programming with C# 12",
+    "description": "C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.\r\n\r\nC# is used to develop web apps, desktop apps, mobile apps, games and much more.",
+    "image": "/uploads/images/1721611309579.jpg",
+    "level": "Senior"
+}
+
+##### Delete course /api/v1/courses/:id
+DELETE  http://localhost:3000/api/v1/courses/669db62380b923b9103dedd4
+Content-Type: application/json
+

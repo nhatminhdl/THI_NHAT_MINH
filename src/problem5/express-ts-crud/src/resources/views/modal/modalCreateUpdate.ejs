@@ -1,0 +1,45 @@
+<!-- Modal -->
+<div class="modal fade" id="create-update-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-uppercase text-center font-weight-bold" id="exampleModalLabel"><i class="fas fa-file-signature"></i> <span  id="title-form">Create the course</span></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="form-create-update" method="post" action="/courses/create" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="mt-4">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Course name:</label>
+                            <input name="name" type="text" class="form-control" id="name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Course description:</label>
+                            <textarea name="description" type="text" class="form-control" id="description" ></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="level" class="form-label">Level:</label>
+                            <input name="level" type="text" class="form-control" id="level" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="level" class="form-label">Image:</label>
+                            <input name="image" type="file" class="form-control" id="image" />
+                        </div>
+
+                        <div class="mb-3">
+                            <img style="width:100%; height:auto" src="" class="rounded mx-auto d-block" alt="" id="img-preview">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+                    <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i> <span id="btn-form-name">Register</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

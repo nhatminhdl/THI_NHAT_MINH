@@ -1,0 +1,6 @@
+{
+    "watch": ["src"],
+    "ext": "ts",
+    "exec": "ts-node-dev src/server.ts  sass --watch src/resources/scss/:src/public/css/"
+}
+  
