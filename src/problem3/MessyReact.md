@@ -24,7 +24,7 @@ Type casting balance to FormattedWalletBalance in the rows mapping is redundant 
 */
 
 ### Refactored Code:
-
+```bash
 import React, { useMemo } from 'react';
 
 interface WalletBalance {
@@ -92,7 +92,7 @@ const WalletPage: React.FC<Props> = (props: Props) => {
 
 export default WalletPage;
 
-
+```
 
 ### Explanation:
 
